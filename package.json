@@ -1,0 +1,42 @@
+{
+  "name": "cloudnotes",
+  "version": "1.0.0",
+  "description": "Cloud-based notes management app built on Cloudflare Workers, D1, and Static Assets",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.worker.json",
+    "lint": "eslint src",
+    "test": "node test-e2e.js",
+    "deploy": "wrangler deploy",
+    "db:migrate:local": "wrangler d1 migrations apply cloudnotes-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply cloudnotes-db --remote",
+    "db:create": "wrangler d1 create cloudnotes-db"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.1",
+    "wrangler": "^3.91.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true,
+    "esbuild@0.17.19": true,
+    "workerd@1.20250718.0": true,
+    "sharp@0.33.5": true
+  }
+}

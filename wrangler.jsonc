@@ -1,0 +1,26 @@
+{
+  // CloudNotes - Cloudflare Worker configuration
+  // https://developers.cloudflare.com/workers/wrangler/configuration/
+  "name": "cloudnotes",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // Workers Static Assets — serves the Vite-built React frontend
+  // The Worker intercepts /api/* routes; everything else falls through to assets
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+
+  // D1 database binding — the Worker accesses D1 via env.DB
+  // Replace <YOUR_D1_DATABASE_ID> with the ID from: wrangler d1 create cloudnotes-db
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cloudnotes-db",
+      "database_id": "<YOUR_D1_DATABASE_ID>"
+    }
+  ]
+}

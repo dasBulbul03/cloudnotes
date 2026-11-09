@@ -1,0 +1,22 @@
+# Node / npm
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+
+# Cloudflare Wrangler state and logs
+.wrangler/
+.mf/
+
+# Environment variables & secrets (do not commit)
+.env
+.env.*
+!.env.example
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.local
+.vscode/
+.idea/
