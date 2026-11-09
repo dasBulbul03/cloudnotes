@@ -1,6 +1,6 @@
 # Node / npm
 node_modules/
-package-lock.json
+
 
 # Build outputs
 dist/
