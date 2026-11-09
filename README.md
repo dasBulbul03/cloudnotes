@@ -106,7 +106,7 @@ For full architectural diagrams and detailed component breakdowns, see [docs/ARC
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/cloudnotes.git
+git clone https://github.com/dasBulbul03/cloudnotes.git
 cd cloudnotes
 ```
 

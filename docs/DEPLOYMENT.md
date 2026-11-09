@@ -124,7 +124,7 @@ git init
 git add .
 git commit -m "feat: initial CloudNotes release"
 git branch -M main
-git remote add origin https://github.com/<YOUR_GITHUB_USER>/cloudnotes.git
+git remote add origin https://github.com/dasBulbul03/cloudnotes.git
 git push -u origin main
 ```
 
