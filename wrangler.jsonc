@@ -5,6 +5,7 @@
   "main": "src/worker/index.ts",
   "compatibility_date": "2024-11-01",
   "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
 
   // Workers Static Assets — serves the Vite-built React frontend
   // The Worker intercepts /api/* routes; everything else falls through to assets
