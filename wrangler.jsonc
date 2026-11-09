@@ -15,12 +15,11 @@
   },
 
   // D1 database binding — the Worker accesses D1 via env.DB
-  // Replace <YOUR_D1_DATABASE_ID> with the ID from: wrangler d1 create cloudnotes-db
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "cloudnotes-db",
-      "database_id": "<YOUR_D1_DATABASE_ID>"
+      "database_id": "65cab318-7d0d-4c7d-999e-64b18335869c"
     }
   ]
 }

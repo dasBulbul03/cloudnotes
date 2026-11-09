@@ -116,7 +116,7 @@ Cloudflare D1 is integrated into the Worker execution environment through **envi
      {
        "binding": "DB",
        "database_name": "cloudnotes-db",
-       "database_id": "<YOUR_D1_DATABASE_ID>"
+       "database_id": "65cab318-7d0d-4c7d-999e-64b18335869c"
      }
    ]
    ```
